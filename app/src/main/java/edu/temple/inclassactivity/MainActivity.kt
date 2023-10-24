@@ -22,4 +22,8 @@ class MainActivity : AppCompatActivity() {
             .commit()
 
     }
+
+    fun setImages(_images: IntArray) {
+        images[position] = _images
+         (view as RecyclerView).adapter.notifyDataSetChanged()
 }
